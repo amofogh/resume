@@ -17,11 +17,14 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 from django.conf import settings
-
-from resume.views import home_page
+# from utilities.pdf import get_pdf, detail_to_pdf
+from me.views import home_page, header, footer
 
 urlpatterns = [
     path('', home_page),
+    path('header', header, name='header'),
+    path('footer', footer, name='footer'),
+    # path('get-pdf', detail_to_pdf),
     path('admin/', admin.site.urls),
 ]
 

@@ -1,17 +1,19 @@
 {% load static %}
+{% load render_partial %}
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Right Resume</title>
+    {% block title %} {% endblock %}
     {% include 'shared/_headerReferencess.html' %}
 </head>
 <body id="top">
-    {% include 'shared/_header.html' %}
+    {% render_partial 'header' %}
 
     {% block content %} {% endblock %}
 
-    {% include 'shared/_footer.html' %}
+    {% render_partial 'footer' %}
+
 
     {% include 'shared/_footerReferences.html' %}
 </body>
