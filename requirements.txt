@@ -1,0 +1,7 @@
+asgiref==3.5.0
+Django==4.0.3
+django-jalali==6.0.0
+django-render-partial==0.4
+jdatetime==4.1.0
+Pillow==9.0.1
+sqlparse==0.4.2
